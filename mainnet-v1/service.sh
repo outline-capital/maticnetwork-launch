@@ -43,7 +43,7 @@ cat > heimdalld.service <<EOF
   Restart=on-failure
   RestartSec=5s
   WorkingDirectory=$NODE_DIR
-  ExecStart=$BIN_DIR/heimdalld start
+  ExecStart=$BIN_DIR/heimdalld start --home /home/ubuntu/node/.heimdalld
   Type=simple
   User=$USER
 
@@ -61,7 +61,7 @@ cat > heimdalld-rest-server.service <<EOF
   Restart=on-failure
   RestartSec=5s
   WorkingDirectory=$NODE_DIR
-  ExecStart=$BIN_DIR/heimdalld rest-server
+  ExecStart=$BIN_DIR/heimdalld rest-server --home /home/ubuntu/node/.heimdalld
   Type=simple
   User=$USER
 
