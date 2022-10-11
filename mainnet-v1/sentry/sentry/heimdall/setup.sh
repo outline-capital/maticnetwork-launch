@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 NODE_DIR=$HOME/node
-HEIMDALL_HOME=$HOME/.heimdalld
+HEIMDALL_HOME=$HOME/node/.heimdalld
 
 # init heimdall node
 heimdalld init --home $HEIMDALL_HOME

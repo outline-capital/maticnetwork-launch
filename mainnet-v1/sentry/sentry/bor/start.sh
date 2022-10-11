@@ -8,19 +8,19 @@ DATA_DIR=$BOR_DIR/data
 export MC_BROADCAST_ALL_BLOCKS=no
 export MC_BROADCAST_ALL_TRANSACTIONS=no
 
-/home/ubuntu/go/bin/bor --datadir $DATA_DIR \
+$GOPATH/bin/bor --datadir $DATA_DIR \
   --ipcpath $DATA_DIR/bor.ipc \
   --networkid '137' \
   --syncmode 'full' \
   --port 30303 \
   --cache 32768 \
   --http \
-  --http.addr 0.0.0.0 \
+  --http.addr 127.0.0.1 \
   --http.port 8545 \
   --http.api 'admin,bor,eth,net,web3' \
   --http.vhosts '*' \
   --ws \
-  --ws.addr 0.0.0.0 \
+  --ws.addr 127.0.0.1 \
   --ws.port 8546 \
   --ws.api 'bor,debug,eth,net,web3,txpool' \
   --ws.origins '*' \

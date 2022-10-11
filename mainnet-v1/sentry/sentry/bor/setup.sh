@@ -2,7 +2,7 @@
 
 # set -x #echo on
 
-BOR_DIR=${BOR_DIR:-/home/ubuntu/node/bor}
+BOR_DIR=${BOR_DIR:-/home/ubuntu/node/.bor}
 DATA_DIR=$BOR_DIR/data
 NODE_KEY=~/nodekey
 
